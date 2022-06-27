@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.d85058a5.css",
-    "main.js": "/static/js/main.9ee4b405.js",
-    "static/js/787.96c3df77.chunk.js": "/static/js/787.96c3df77.chunk.js",
-    "index.html": "/index.html",
-    "main.d85058a5.css.map": "/static/css/main.d85058a5.css.map",
-    "main.9ee4b405.js.map": "/static/js/main.9ee4b405.js.map",
-    "787.96c3df77.chunk.js.map": "/static/js/787.96c3df77.chunk.js.map"
+    "main.css": "/secure-pay/static/css/main.d85058a5.css",
+    "main.js": "/secure-pay/static/js/main.1fc47027.js",
+    "static/js/787.96c3df77.chunk.js": "/secure-pay/static/js/787.96c3df77.chunk.js",
+    "index.html": "/secure-pay/index.html",
+    "main.d85058a5.css.map": "/secure-pay/static/css/main.d85058a5.css.map",
+    "main.1fc47027.js.map": "/secure-pay/static/js/main.1fc47027.js.map",
+    "787.96c3df77.chunk.js.map": "/secure-pay/static/js/787.96c3df77.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d85058a5.css",
-    "static/js/main.9ee4b405.js"
+    "static/js/main.1fc47027.js"
   ]
 }
