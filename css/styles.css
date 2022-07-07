@@ -62,7 +62,7 @@ p {
     justify-content: space-between;
 }
 .create-account .form-group {
-    margin: 12px 14px;
+    margin: 7px 14px 0 14px;
     width: 50%;
 }
 .create-account .form-control {
@@ -106,6 +106,10 @@ p {
     text-decoration: underline;
 }
 
+pre {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
 /* custom select */
 
 .select-hidden {
@@ -194,13 +198,10 @@ p {
   .select-options li[rel="hide"] {
     display: none;
   }
-
   .text-danger{
     margin:0;
     color: #9c1c20;
   }
-
-  
   #error1 {
     visibility: hidden;
     color: #e74c3c;
@@ -229,16 +230,62 @@ p {
     color: #e74c3c;
     margin:0;
   }
-
-
-
   #error6 {
     visibility: hidden;
     color: #e74c3c;
     margin:0;
   }
+  .border-danger {
+    border: 1px solid #ce0404;
+    
+  }
 
 
+  .custom-select-box {
+    position: relative;
+  }
+  .custom-select-box .select-input {
+    position: relative;
+  }
+  .custom-select-box .select-input .down-arrow {
+    position: absolute;
+    right: 16px;
+    top: 22px;
+    width: 13px;
+  }
+  .custom-select-box.open-select .select-input .down-arrow {
+    transform: rotate(180deg);
+  }
+  .custom-select-box.open-select  .form-control {
+    border-color: #00a3ff;
+  }
+  .open-values {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #becad6;
+    border-radius: 5px;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 106%;
+    overflow: hidden;
+    z-index: 999;
+  }
+  .custom-select-box .value-items {
+    border-top: 1px solid #fff;
+    color: #252e3c;
+    margin: 0;
+    padding: 7.5px 0;
+    text-indent: 15px;
+    transition: all ease 0.25s;
+    cursor: pointer;
+}
+.custom-select-box .value-items:hover {
+    background: #f0f0f0;
+}
   
 /*** media query started ***/
 
