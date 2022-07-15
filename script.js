@@ -18,24 +18,112 @@ const ser3 = document.getElementById("ser3");
 
 location1.addEventListener("click", (e) => {
   e.preventDefault();
-  option1.style.display = option1.style.display === "none" ? "block" : "none";
+  option1.style.display = option1.style.display === "block" ? "none" : "block";
+  option2.style.display = "none";
+  option3.style.display = "none";
+  option4.style.display = "none";
+  option5.style.display = "none";
+  let img1 = document.getElementById("img1");
+  let img2 = document.getElementById("img2");
+  let img3 = document.getElementById("img3");
+  let img4 = document.getElementById("img4");
+  let img5 = document.getElementById("img5");
+  img1.style.transform =
+    img1.style.transform === "rotate(180deg)"
+      ? "rotate(0deg)"
+      : "rotate(180deg)";
+  img2.style.transform = "rotate(0deg)";
+  img3.style.transform = "rotate(0deg)";
+  img4.style.transform = "rotate(0deg)";
+  img5.style.transform = "rotate(0deg)";
 });
 industry.addEventListener("click", (e) => {
   e.preventDefault();
-  option2.style.display = option2.style.display === "none" ? "block" : "none";
+  option2.style.display = option2.style.display === "block" ? "none" : "block";
+  option1.style.display = "none";
+  option3.style.display = "none";
+  option4.style.display = "none";
+  option5.style.display = "none";
+  let img2 = document.getElementById("img2");
+  img2.style.transform =
+    img2.style.transform === "rotate(180deg)"
+      ? "rotate(0deg)"
+      : "rotate(180deg)";
+
+  let img1 = document.getElementById("img1");
+  let img3 = document.getElementById("img3");
+  let img4 = document.getElementById("img4");
+  let img5 = document.getElementById("img5");
+
+  img1.style.transform = "rotate(0deg)";
+  img3.style.transform = "rotate(0deg)";
+  img4.style.transform = "rotate(0deg)";
+  img5.style.transform = "rotate(0deg)";
 });
 service.addEventListener("click", (e) => {
   e.preventDefault();
-  option3.style.display = option3.style.display === "none" ? "block" : "none";
+  option3.style.display = option3.style.display === "block" ? "none" : "block";
+  option2.style.display = "none";
+  option1.style.display = "none";
+  option4.style.display = "none";
+  option5.style.display = "none";
+  let img3 = document.getElementById("img3");
+  img3.style.transform =
+    img3.style.transform === "rotate(180deg)"
+      ? "rotate(0deg)"
+      : "rotate(180deg)";
+  let img1 = document.getElementById("img1");
+  let img2 = document.getElementById("img2");
+  let img4 = document.getElementById("img4");
+  let img5 = document.getElementById("img5");
+  img1.style.transform = "rotate(0deg)";
+  img2.style.transform = "rotate(0deg)";
+  img4.style.transform = "rotate(0deg)";
+  img5.style.transform = "rotate(0deg)";
 });
 cart.addEventListener("click", (e) => {
   e.preventDefault();
-  option4.style.display = option4.style.display === "none" ? "block" : "none";
+  option4.style.display = option4.style.display === "block" ? "none" : "block";
+  option2.style.display = "none";
+  option3.style.display = "none";
+  option1.style.display = "none";
+  option5.style.display = "none";
+  let img4 = document.getElementById("img4");
+  let img1 = document.getElementById("img1");
+  let img2 = document.getElementById("img2");
+  let img3 = document.getElementById("img3");
+  let img5 = document.getElementById("img5");
+  img4.style.transform =
+    img4.style.transform === "rotate(180deg)"
+      ? "rotate(0deg)"
+      : "rotate(180deg)";
+  img1.style.transform = "rotate(0deg)";
+  img2.style.transform = "rotate(0deg)";
+  img3.style.transform = "rotate(0deg)";
+  img5.style.transform = "rotate(0deg)";
 });
 
 sales.addEventListener("click", (e) => {
   e.preventDefault();
-  option5.style.display = option5.style.display === "none" ? "block" : "none";
+  option5.style.display = option5.style.display === "block" ? "none" : "block";
+  option2.style.display = "none";
+  option3.style.display = "none";
+  option4.style.display = "none";
+  option1.style.display = "none";
+  let img5 = document.getElementById("img5");
+  img5.style.transform =
+    img5.style.transform === "rotate(180deg)"
+      ? "rotate(0deg)"
+      : "rotate(180deg)";
+
+  let img1 = document.getElementById("img1");
+  let img2 = document.getElementById("img2");
+  let img3 = document.getElementById("img3");
+  let img4 = document.getElementById("img4");
+  img1.style.transform = "rotate(0deg)";
+  img2.style.transform = "rotate(0deg)";
+  img3.style.transform = "rotate(0deg)";
+  img4.style.transform = "rotate(0deg)";
 });
 
 form.addEventListener("submit", (e) => {
@@ -123,6 +211,31 @@ sale3.addEventListener("click", (e) => {
   option5.style.display = option5.style.display === "none" ? "block" : "none";
 });
 
+const setErrorFor = (input, message) => {
+  const formControl = input.parentElement; //this is the .form-control
+  const small = document.getElementsByClassName("small");
+  //add error message inside small
+  small.innerText = message;
+  service.style.backgroundColor = "red";
+
+  //add error class
+  small.className = "error";
+};
+
+const setSuccessFor = (input) => {
+  const formControl = input.parentElement; //this is the .form-control
+
+  //add success class
+  formControl.className = "success";
+};
+
+const isEmail = (email) => {
+  //this checks if the email is valid
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    email
+  );
+};
+
 const checkInputs = () => {
   const emailValue = email.value.trim();
   const locationValue = location1.value;
@@ -130,7 +243,6 @@ const checkInputs = () => {
   const serviceValue = service.value;
   const cartValue = cart.value;
   const salesValue = sales.value;
-  console.log("industryValue", industryValue);
 
   if (locationValue === "") {
     const error = document.getElementById("error1");
@@ -191,29 +303,15 @@ const checkInputs = () => {
     error.style.visibility = "hidden";
     sales.style.border = "1px solid #becad6";
   }
-};
 
-const setErrorFor = (input, message) => {
-  const formControl = input.parentElement; //this is the .form-control
-  const small = document.getElementsByClassName("small");
-  //add error message inside small
-  small.innerText = message;
-  service.style.backgroundColor = "red";
-
-  //add error class
-  small.className = "error";
-};
-
-const setSuccessFor = (input) => {
-  const formControl = input.parentElement; //this is the .form-control
-
-  //add success class
-  formControl.className = "success";
-};
-
-const isEmail = (email) => {
-  //this checks if the email is valid
-  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    email
-  );
+  if (
+    salesValue !== "" &&
+    cartValue !== "" &&
+    serviceValue !== "" &&
+    industryValue !== "" &&
+    locationValue !== "" &&
+    emailValue !== ""
+  ) {
+    location.href = "/progress.html";
+  }
 };

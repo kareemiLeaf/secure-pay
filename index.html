@@ -1,161 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>SecureGlobalPay</title>
     <meta name="keywords" content="SecureGlobalPay" />
     <meta name="author" content="SecureGlobalPay" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
-</head>
+  </head>
 
-
-<body>
+  <body>
     <main>
-        <div class="container">
-            <div class="navigation-system">
-                <div class="steps">
-                    <div class="steps-icon">
-                        <img src="images/icon-1.svg" alt="keep_simple">
-                    </div>
-                    <div class="step-contents">
-                        <h5 class="title">Keep It Simple</h5>
-                        <p class="description">Give your business the lift it needs. Together, we'll guide you through
-                            step-by-step.</p>
-                    </div>
-                </div>
-                <div class="steps">
-                    <div class="steps-icon">
-                        <img src="images/icon-2.svg" alt="keep_simple">
-                    </div>
-                    <div class="step-contents">
-                        <h5 class="title">A Few Quick Steps</h5>
-                        <p class="description">Get approved quickly and easily, so you enhance your business with us.
-                        </p>
-                    </div>
-                </div>
-                <div class="steps">
-                    <div class="steps-icon">
-                        <img src="images/icon-3.svg" alt="keep_simple">
-                    </div>
-                    <div class="step-contents">
-                        <h5 class="title">Advanced Features</h5>
-                        <p class="description">Our payment gateway includes 3D Secure, multi-currency conversion, and
-                            intelligent transaction routing.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="navigation-system">
+          <div class="steps">
+            <div class="steps-icon">
+              <img src="images/icon-1.svg" alt="keep_simple" />
             </div>
-            <div class="create-account">
-                <form id="form">
-                    <div class="form-row">
-                        <div class="form-group col">
-
-                            <div class="custom-select-box">
-                                <div class="select-input">
-                                    <input id="location1"
-                                        style="color: #000 ;cursor: pointer; caret-color: transparent;" type="text"
-                                        class="form-control" placeholder="Location">
-                                    <img class="down-arrow" src="images/arrowdown.svg" alt="down_arrow">
-                                </div>
-                                <div class="open-values" id="option1">
-                                    <div class="value-items" id="loc1">Option 1</div>
-                                    <div class="value-items" id="loc2">Option 2</div>
-                                    <div class="value-items" id="loc3">Option 3</div>
-                                </div>
-                            </div>
-                            <pre id="error1">Choose location</pre>
-                        </div>
-                        <div class="form-group col">
-                            <input id="email" type="text" class="form-control" placeholder="Email">
-                            <pre id="error2">Enter a valid Email</pre>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col">
-                            <div class="custom-select-box">
-                                <div class="select-input" id="select3">
-                                    <input id="industry" style="color: #000 ;cursor: pointer; caret-color: transparent;"
-                                        type="text" class="form-control" placeholder="Industry">
-                                    <img class="down-arrow" src="images/arrowdown.svg" alt="down_arrow">
-                                </div>
-                                <div class="open-values" id="option2">
-                                    <div class="value-items" id="ind1">Option 1</div>
-                                    <div class="value-items" id="ind2">Option 2</div>
-                                    <div class="value-items" id="ind3">Option 3</div>
-                                </div>
-                            </div>
-                            <pre id="error3">Choose Industry</pre>
-                        </div>
-                        <div class="form-group col">
-                            <div class="custom-select-box">
-                                <div class="select-input" id="select4">
-                                    <input id="service" style="color: #000 ;cursor: pointer; caret-color: transparent;"
-                                        type="text" class="form-control"
-                                        placeholder="What services are you interested in?">
-                                    <img class="down-arrow" src="images/arrowdown.svg" alt="down_arrow">
-                                </div>
-                                <div class="open-values" id="option3">
-                                    <div class="value-items" id="ser1">Option 1</div>
-                                    <div class="value-items" id="ser2">Option 2</div>
-                                    <div class="value-items" id="ser3">Option 3</div>
-                                </div>
-                            </div>
-                            <pre id="error4">Choose service</pre>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col">
-                            <div class="custom-select-box">
-                                <div class="select-input" id="select5">
-                                    <input id="mounth" style="color: #000 ;cursor: pointer; caret-color: transparent;"
-                                        type="text" class="form-control" placeholder="Shopping Cart Type">
-                                    <img class="down-arrow" src="images/arrowdown.svg" alt="down_arrow">
-                                </div>
-                                <div class="open-values" id="option4">
-                                    <div class="value-items" id="cart1">Option 1</div>
-                                    <div class="value-items" id="cart2">Option 2</div>
-                                    <div class="value-items" id="cart3">Option 3</div>
-                                </div>
-                            </div>
-                            <pre id="error5">Choose cart type</pre>
-                        </div>
-                        <div class="form-group col">
-                            <!-- <select id="sales">
-                                <option value="hide">Monthly Sales Volume</option>
-                                <option>Option 1</option>
-                                <option>Option 2</option>
-                                <option>Option 3</option>
-                            </select> -->
-                            <div class="custom-select-box">
-                                <div class="select-input" id="select6">
-                                    <input id="sales" style="color: #000 ;cursor: pointer; caret-color: transparent;"
-                                        type="text" class="form-control" placeholder="Monthly Sales Volume">
-                                    <img class="down-arrow" src="images/arrowdown.svg" alt="down_arrow">
-                                </div>
-                                <div class="open-values" id="option5">
-                                    <div class="value-items" id="sale1">Option 1</div>
-                                    <div class="value-items" id="sale2">Option 2</div>
-                                    <div class="value-items" id="sale3">Option 3</div>
-                                </div>
-                            </div>
-                            <pre id="error6">Choose monthly sales</pre>
-                        </div>
-                    </div>
-                    <div class="button-section">
-                        <input type="submit" class="create-btn" value="Create Account">
-                        <p>Already have an account? <a href="#">Sign In</a></p>
-                    </div>
-                </form>
+            <div class="step-contents">
+              <h5 class="title">Keep It Simple</h5>
+              <p class="description">
+                Give your business the lift it needs. Together, we'll guide you
+                through step-by-step.
+              </p>
             </div>
+          </div>
+          <div class="steps">
+            <div class="steps-icon">
+              <img src="images/icon-2.svg" alt="keep_simple" />
+            </div>
+            <div class="step-contents">
+              <h5 class="title">A Few Quick Steps</h5>
+              <p class="description">
+                Get approved quickly and easily, so you enhance your business
+                with us.
+              </p>
+            </div>
+          </div>
+          <div class="steps">
+            <div class="steps-icon">
+              <img src="images/icon-3.svg" alt="keep_simple" />
+            </div>
+            <div class="step-contents">
+              <h5 class="title">Advanced Features</h5>
+              <p class="description">
+                Our payment gateway includes 3D Secure, multi-currency
+                conversion, and intelligent transaction routing.
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="create-account">
+          <form id="form">
+            <div class="form-row">
+              <div class="form-group col">
+                <div class="custom-select-box">
+                  <div class="select-input">
+                    <input
+                      id="location1"
+                      style="
+                        color: #000;
+                        cursor: pointer;
+                        caret-color: transparent;
+                      "
+                      type="text"
+                      class="form-control"
+                      placeholder="Location"
+                    />
+                    <img
+                      class="down-arrow"
+                      id="img1"
+                      src="images/arrowdown.svg"
+                      alt="down_arrow"
+                    />
+                  </div>
+                  <div class="open-values" id="option1">
+                    <div class="value-items" id="loc1">Option 1</div>
+                    <div class="value-items" id="loc2">Option 2</div>
+                    <div class="value-items" id="loc3">Option 3</div>
+                  </div>
+                </div>
+                <pre id="error1">Choose location</pre>
+              </div>
+              <div class="form-group col">
+                <input
+                  id="email"
+                  type="text"
+                  class="form-control"
+                  placeholder="Email"
+                />
+                <pre id="error2">Enter a valid Email</pre>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <div class="custom-select-box">
+                  <div class="select-input" id="select3">
+                    <input
+                      id="industry"
+                      style="
+                        color: #000;
+                        cursor: pointer;
+                        caret-color: transparent;
+                      "
+                      type="text"
+                      class="form-control"
+                      placeholder="Industry"
+                    />
+                    <img
+                      id="img2"
+                      class="down-arrow"
+                      src="images/arrowdown.svg"
+                      alt="down_arrow"
+                    />
+                  </div>
+                  <div class="open-values" id="option2">
+                    <div class="value-items" id="ind1">Option 1</div>
+                    <div class="value-items" id="ind2">Option 2</div>
+                    <div class="value-items" id="ind3">Option 3</div>
+                  </div>
+                </div>
+                <pre id="error3">Choose Industry</pre>
+              </div>
+              <div class="form-group col">
+                <div class="custom-select-box">
+                  <div class="select-input" id="select4">
+                    <input
+                      id="service"
+                      style="
+                        color: #000;
+                        cursor: pointer;
+                        caret-color: transparent;
+                      "
+                      type="text"
+                      class="form-control"
+                      placeholder="What services are you interested in?"
+                    />
+                    <img
+                      id="img3"
+                      class="down-arrow"
+                      src="images/arrowdown.svg"
+                      alt="down_arrow"
+                    />
+                  </div>
+                  <div class="open-values" id="option3">
+                    <div class="value-items" id="ser1">Option 1</div>
+                    <div class="value-items" id="ser2">Option 2</div>
+                    <div class="value-items" id="ser3">Option 3</div>
+                  </div>
+                </div>
+                <pre id="error4">Choose service</pre>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <div class="custom-select-box">
+                  <div class="select-input" id="select5">
+                    <input
+                      id="mounth"
+                      style="
+                        color: #000;
+                        cursor: pointer;
+                        caret-color: transparent;
+                      "
+                      type="text"
+                      class="form-control"
+                      placeholder="Shopping Cart Type"
+                    />
+                    <img
+                      id="img4"
+                      class="down-arrow"
+                      src="images/arrowdown.svg"
+                      alt="down_arrow"
+                    />
+                  </div>
+                  <div class="open-values" id="option4">
+                    <div class="value-items" id="cart1">Option 1</div>
+                    <div class="value-items" id="cart2">Option 2</div>
+                    <div class="value-items" id="cart3">Option 3</div>
+                  </div>
+                </div>
+                <pre id="error5">Choose cart type</pre>
+              </div>
+              <div class="form-group col">
+                <div class="custom-select-box">
+                  <div class="select-input" id="select6">
+                    <input
+                      id="sales"
+                      style="
+                        color: #000;
+                        cursor: pointer;
+                        caret-color: transparent;
+                      "
+                      type="text"
+                      class="form-control"
+                      placeholder="Monthly Sales Volume"
+                    />
+                    <img
+                      id="img5"
+                      class="down-arrow"
+                      src="images/arrowdown.svg"
+                      alt="down_arrow"
+                    />
+                  </div>
+                  <div class="open-values" id="option5">
+                    <div class="value-items" id="sale1">Option 1</div>
+                    <div class="value-items" id="sale2">Option 2</div>
+                    <div class="value-items" id="sale3">Option 3</div>
+                  </div>
+                </div>
+                <pre id="error6">Choose monthly sales</pre>
+              </div>
+            </div>
+            <div class="button-section">
+              <input type="submit" class="create-btn" value="Create Account" />
+              <p>Already have an account? <a href="#">Sign In</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
 
-
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
